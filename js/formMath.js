@@ -5,7 +5,7 @@ const consumo_small = 5.23;
 const consumo_medium = 6.7;
 const consumo_big = 8.39;
 let consumoLitros = 0;
-
+let averageCO2 = 5.5;
 form.addEventListener('submit', (event) =>{
     event.preventDefault();
 });
@@ -33,6 +33,13 @@ button.addEventListener('click', function(){
             co2Emisiones = consumoLitros * 0.74  * 2.31;
         }
         respuesta.textContent =  Math.round(co2Emisiones * 100) / 100;
+    }
+    if(respuesta.textContent < averageCO2){
+        respuesta.style.color = "green";
+    } else if (respuesta.textContent > averageCO2){
+        respuesta.style.color = "red";
+    } else {
+        respuesta.style.color = "yellow";
     }
 });
 

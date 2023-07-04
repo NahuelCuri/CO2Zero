@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <Style>
+    .explicacion_calculadora p {
+      font-size: 15px;
+      text-align: center;
+    }
+    .explicacion_calculadora{
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+    }
+    .container_calc{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </Style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,8 +54,10 @@
             <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
             <div class="divider-custom-line"></div>
         </div>
-        <div class="formhtml">
+        <div class="container_calc">
+          <div class="formhtml">
             <form id="myForm" class="form-container">
+              <form id="myForm" class="form-container">
                 <label for="distance" class="distancia">Distancia (KM):</label>
                 <input type="number" id="distance" name="distance" >
               
@@ -64,8 +84,22 @@
                 <button class="calcular" type="submit">Calcular</button>
                 <span class="respuesta"></span>
               </form>
-              
+            </form>
+          </div>
+          <div class="explicacion_calculadora">
+            <div class="col-lg-4 ">
+              <p class="lead">
+                Nuestra calculadora le ayuda a comprender el impacto de su automóvil en el medio ambiente al calcular la cantidad de CO2 que produce. La calculadora tiene en cuenta el tamaño de su automóvil (pequeño, mediano o grande), si funciona con diésel o gasolina y la distancia que recorre (en kilómetros).
+              </p>
+            </div>
+            <div class="col-lg-4 ">
+              <p class="lead">
+                Al usar esta calculadora, puede ver cómo su automóvil contribuye a las emisiones de CO2 y tomar medidas para reducir su huella de carbono. Si para el 2050 queremos reducir la huella de carbono global para evitar aumentos de temperatura, el consumo promedio por persona de CO2 debe de ser menor a 5.5kg por dia. Aunque el impacto de las emisiones de CO2 en nuestro planeta puede parecer abrumador, hay muchas acciones que podemos tomar para marcar una diferencia positiva.
+              </p>
+            </div>
+          </div>
         </div>
+        
         
     <script src="./js/formMath.js"></script>
 </body>

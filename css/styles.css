@@ -11090,7 +11090,7 @@ html {
   margin-top: 50px;
 }
 .calculadora_title{
-  padding-top: 35vh;
+  padding-top: 17vh;
 }
 
 .row div p{
@@ -11119,6 +11119,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 17vh;
   padding-top: 30px;
 }
@@ -11139,6 +11140,6 @@ html {
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ccc;
-  color: red;
+  color: black;
 }
 
